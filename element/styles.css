@@ -3,37 +3,105 @@
 	grid-template-columns: 1fr 3fr;
 	grid-template-rows: 1fr 9fr;
 	min-height: 100%;
+	min-width 100%;
 	background-color: #444;
 	padding: 0px
 }
 
-.phone aside{
-	display: grid;
-	grid-template-rows: 1fr 3fr 6fr;
-	height: auto
-}
-
-.phone div * {
-	margin: 0px ;
-	font-size: 30px
+.phone .separator-solid{
+	border-bottom: 3px solid #555555;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	padding-left: 30px;
+	padding-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 40px;
 }
 
 .phone h1{
-	font-size: 70px;
+	font-size: 80px;
+	margin: 0px
 }
 
 .phone h2 {
 	font-size: 50px;
+	margin: 0px
 }
 
 .phone h3 {
-	font-size: 35px;
+	font-size: 40px;
 	padding-bottom: 0px;
 	padding-top: 30px;
+	margin: 0px;
+}
+
+.phone h4{
+	font-size: 20px;
+	margin: 0px;
 }
 
 .phone img {
-	padding-top: 20px
+	padding-top: 20px;
+	width: 180px;
+	height: 180px
+}
+
+
+/* desktop*/
+
+.desktop .main-grid{
+	display: none;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: 1fr 9fr;
+	height: 100%;
+	min-width 100%;
+	background-color: #444;
+	padding: 0px
+}
+
+.desktop .separator-solid{
+	border-bottom: 3px solid #555555;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	padding-left: 300px;
+	padding-right: 300px;
+    padding-top: 0px;
+    padding-bottom: 80px;
+}
+
+.desktop img{
+	padding-top: 20px;
+	width: 400px;
+	height: 400px
+}
+
+.desktop h1{
+	font-size: 140px;
+	margin: 0px
+}
+
+.desktop h2{
+	font-size: 100px;
+	padding-bottom: 40px;
+	margin: 0px
+}
+
+.desktop h3{
+	font-size: 70px;
+	margin: 0px;
+}
+
+.desktop h4{
+	font-size: 70px;
+	margin: 0px;
+	padding-left: 50px;
+}
+
+.desktop ul *{
+    font-size: 50px;
+	margin: 0px;
 }
 
 
@@ -44,7 +112,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: auto;
+	height: 100%;
 }
 
 .padded{
@@ -62,16 +130,6 @@
 	border-right: none;
 }
 
-.separator-solid{
-	border-bottom: 3px solid #555555;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	padding-left: 30px;
-    padding-top: 0px;
-    padding-bottom: 40px;
-}
-
 .green {
 	color: #00cc66
 }
@@ -87,9 +145,12 @@
 }
 
 .sidebar {
+    display: grid;
+    grid-template-rows: auto auto auto;
 	background-color: #666666;
 	color: black;
 	padding: 10px;
+    height: auto
 }
 
 .main {
@@ -107,7 +168,6 @@ main * {
 body {
 	background-color: #333;
 	color: #ffffff;
-	font-size: 40px;
 	margin: 0px;
 	height: 100vh;
 	font-family: Times New Roman, Times, serif
