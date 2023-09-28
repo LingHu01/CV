@@ -1,4 +1,6 @@
-.main-grid{
+// .phone
+
+body.phone .main-grid{
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	grid-template-rows: 1fr 9fr;
@@ -6,11 +8,55 @@
 	background-color: #444
 }
 
-.aside-grid{
+body.phone .aside-grid{
 	display: grid;
 	grid-template-rows: 1fr 3fr 6fr;
 	height: 100vh
 }
+
+.phone aside * {
+	margin: 10px;
+	text-align: center;
+}
+
+.phone div {
+	padding: 20px 0px;
+}
+
+.phone div * {
+	margin: 0px ;
+	font-size: 30px
+}
+
+.phone main * {
+	color: #000000;
+}
+
+.phone h1{
+	font-size: 70px;
+}
+
+.phone h2 {
+	font-size: 50px;
+}
+
+.phone h3 {
+	font-size: 40px;
+	padding-bottom: 0px;
+	padding-top: 30px;
+}
+
+.phone a {
+	text-decoration: none;
+}
+
+.phone img {
+	padding-top: 20px
+}
+
+
+
+// class
 
 .vertical-centered {
 	display: flex;
@@ -54,24 +100,13 @@
 	padding: 10px;
 }
 
-.main { 
+.main {
 	background-color: #888;
 	padding: 50px 80px;
 }
 
-aside * {
-	margin: 10px;
-	text-align: center;
-}
 
-div {
-	padding: 20px 0px;
-}
-
-div * {
-	margin: 0px ;
-	font-size: 30px
-}
+// items styles
 
 body {
 	background-color: #333;
@@ -79,30 +114,4 @@ body {
 	font-size: 40px;
 	margin: 0px;
 	font-family: Times New Roman, Times, serif
-}
-
-main * {
-	color: #000000;
-}
-
-h1{
-	font-size: 70px;
-}
-
-h2 {
-	font-size: 50px;
-}
-
-h3 {
-	font-size: 40px;
-	padding-bottom: 0px;
-	padding-top: 30px;
-}
-
-a {
-	text-decoration: none;
-}
-
-img {
-	padding-top: 20px
 }
