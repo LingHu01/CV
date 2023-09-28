@@ -24,6 +24,10 @@
 	padding: 0px 100px;
 }
 
+.center{
+    text-align: center
+}
+
 .separator{
 	border-bottom: 10px dotted #aaa;
     border-top: none;
@@ -33,6 +37,10 @@
 
 .green {
 	color: #00cc66
+}
+
+.blue {
+    color: #0056b3
 }
 
 .header {
@@ -74,7 +82,7 @@ body {
 }
 
 main * {
-	color: #000000
+	color: #000000;
 }
 
 h1{
@@ -86,12 +94,13 @@ h2 {
 }
 
 h3 {
-	font-size: 40px
+	font-size: 40px;
+	padding-bottom: 0px;
+    padding-top: 30px;
 }
 
 
 a {
-	color: #00cc66;
 	text-decoration: none;
 }
 
