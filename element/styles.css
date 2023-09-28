@@ -1,14 +1,13 @@
-// .phone
-
-body.phone .main-grid{
-	display: grid;
+.phone .main-grid{
+	display: none;
 	grid-template-columns: 1fr 3fr;
 	grid-template-rows: 1fr 9fr;
 	height: 100vh;
-	background-color: #444
+	background-color: #444;
+	padding: 0px
 }
 
-body.phone .aside-grid{
+.phone aside{
 	display: grid;
 	grid-template-rows: 1fr 3fr 6fr;
 	height: 100vh
@@ -56,7 +55,7 @@ body.phone .aside-grid{
 
 
 
-// class
+
 
 .vertical-centered {
 	display: flex;
@@ -106,7 +105,6 @@ body.phone .aside-grid{
 }
 
 
-// items styles
 
 body {
 	background-color: #333;
