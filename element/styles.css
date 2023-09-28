@@ -2,7 +2,7 @@
 	display: none;
 	grid-template-columns: 1fr 3fr;
 	grid-template-rows: 1fr 9fr;
-	height: 100vh;
+	height: auto;
 	background-color: #444;
 	padding: 0px
 }
@@ -10,25 +10,12 @@
 .phone aside{
 	display: grid;
 	grid-template-rows: 1fr 3fr 6fr;
-	height: 100vh
-}
-
-.phone aside * {
-	margin: 10px;
-	text-align: center;
-}
-
-.phone div {
-	padding: 20px 0px;
+	height: auto
 }
 
 .phone div * {
 	margin: 0px ;
 	font-size: 30px
-}
-
-.phone main * {
-	color: #000000;
 }
 
 .phone h1{
@@ -40,13 +27,9 @@
 }
 
 .phone h3 {
-	font-size: 40px;
+	font-size: 35px;
 	padding-bottom: 0px;
 	padding-top: 30px;
-}
-
-.phone a {
-	text-decoration: none;
 }
 
 .phone img {
@@ -54,15 +37,14 @@
 }
 
 
-
-
+/* classe */
 
 .vertical-centered {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
+	height: auto;
 }
 
 .padded{
@@ -73,11 +55,21 @@
 	text-align: center
 }
 
-.separator{
+.separator-dotted{
 	border-bottom: 10px dotted #aaa;
 	border-top: none;
 	border-left: none;
 	border-right: none;
+}
+
+.separator-solid{
+	border-bottom: 3px solid #555555;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	padding-left: 30px;
+    padding-top: 0px;
+    padding-bottom: 40px;
 }
 
 .green {
@@ -89,6 +81,7 @@
 }
 
 .header {
+    grid-column: span 2;
 	color: #ffffff;
 	font-size: 60px;
 }
@@ -101,10 +94,15 @@
 
 .main {
 	background-color: #888;
-	padding: 50px 80px;
+	padding: 50px 20px   ;
 }
 
 
+/* element */
+
+main * {
+	color: #000000;
+}
 
 body {
 	background-color: #333;
@@ -112,4 +110,17 @@ body {
 	font-size: 40px;
 	margin: 0px;
 	font-family: Times New Roman, Times, serif
+}
+
+a {
+	text-decoration: none;
+}
+
+aside * {
+	margin: 10px;
+	text-align: center;
+}
+
+.div {
+	padding: 20px 0px;
 }
