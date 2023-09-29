@@ -28,5 +28,6 @@ def check_screen_dimensions():
     else:
         # Portrait orientation
         apply_portrait_styles()
+    document.querySelector('.loading-screen').style.display = 'none'
 
 check_screen_dimensions()
